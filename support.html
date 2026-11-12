@@ -42,11 +42,11 @@
     </details>
     <details>
       <summary>Can I edit the text first?</summary>
-      <p>Yes. The left pane holds the Markdown source; the preview on the right follows as you type. <kbd>⌘F</kbd> finds text in the source. To hide the source and see only the result, choose <em>View › Show Markdown Source</em> (<kbd>⌘\</kbd>).</p>
+      <p>Yes. The left pane holds the Markdown source; the preview on the right follows as you type, and scrolls with the source as you scroll. <kbd>⌘F</kbd> finds text in the source. To hide the source and see only the result, choose <em>View › Show Markdown Source</em> (<kbd>⌘\</kbd>).</p>
     </details>
     <details>
-      <summary>Can I convert without opening the window?</summary>
-      <p>With Pastedown in front, <em>Edit › Convert Clipboard to Rich Text</em> (<kbd>⌥⌘C</kbd>) converts the Markdown on the clipboard in place, without loading it into the window.</p>
+      <summary>Can I convert the clipboard without loading it?</summary>
+      <p>Yes. With Pastedown open and in front, <em>Edit › Convert Clipboard to Rich Text</em> (<kbd>⌥⌘C</kbd>) converts the Markdown on the clipboard in place, leaving the text in the window as it is.</p>
     </details>
     <details>
       <summary>Which Markdown does it understand?</summary>
@@ -68,13 +68,13 @@
     </details>
     <details>
       <summary>It says the clipboard is large.</summary>
-      <p>Pastedown doesn’t load more than about a megabyte of text by itself. <em>Edit › Load Clipboard</em> (<kbd>⇧⌘V</kbd>) loads it anyway.</p>
+      <p>Pastedown doesn’t load more than about 200 KB of text by itself. <em>Edit › Load Clipboard</em> (<kbd>⇧⌘V</kbd>) loads it anyway.</p>
     </details>
 
     <h2 id="pasting">Pasting</h2>
     <details open>
       <summary>Why does the pasted text look different from the preview?</summary>
-      <p>The preview is for reading. What goes on the clipboard is plainly styled, so that it takes on the fonts of the document you paste into. Headings, emphasis, lists, tables and links are kept.</p>
+      <p>The preview is for reading. What goes on the clipboard is plainly styled, in a standard system font and size, whatever the preview’s settings. Headings, emphasis, lists, tables and links are kept. Apps that take only plain text get the Markdown itself.</p>
     </details>
     <details>
       <summary>What happens to task lists?</summary>
@@ -82,7 +82,7 @@
     </details>
     <details>
       <summary>What happens to images?</summary>
-      <p>Pastedown doesn’t fetch images from the web, so they aren’t shown in the preview. The image link is kept in what you copy, and the app you paste into may load it.</p>
+      <p>Pastedown doesn’t fetch images from the web, so they aren’t shown in the preview. In what you copy, the image stays as a link for apps that can load it themselves, such as Mail or Google Docs; the others get the image’s description instead.</p>
     </details>
     <details>
       <summary>The formatting didn’t arrive in one app.</summary>
@@ -92,7 +92,7 @@
     <h2 id="display">Display</h2>
     <details open>
       <summary>How do I change the font, the size or the colours?</summary>
-      <p>In the <em>View</em> menu or in <em>Pastedown › Settings</em>: <em>Zoom In</em> and <em>Zoom Out</em> (<kbd>⌘+</kbd>, <kbd>⌘−</kbd>; <kbd>⌘0</kbd> for the actual size), <em>Wider</em> and <em>Narrower</em> (<kbd>⌘]</kbd>, <kbd>⌘[</kbd>), five typefaces, <em>Justify Text</em> (<kbd>⌘J</kbd>) and <em>Dark Mode</em> (<kbd>⌘D</kbd>). Without Dark Mode, Pastedown follows your Mac’s appearance. These change the preview only, not what you copy.</p>
+      <p>In the <em>View</em> menu or in <em>Pastedown › Settings</em>: <em>Zoom In</em> and <em>Zoom Out</em> (<kbd>⌘+</kbd>, <kbd>⌘−</kbd>; <kbd>⌘0</kbd> for the actual size), <em>Wider</em> and <em>Narrower</em> (<kbd>⌘]</kbd>, <kbd>⌘[</kbd>), five typefaces, <em>Justify Text</em> (<kbd>⌘J</kbd>) and <em>Dark Mode</em> (<kbd>⌘D</kbd>). With Dark Mode off, Pastedown follows your Mac’s appearance, unless you have chosen Light in Settings. Zoom also enlarges the source. None of this changes what you copy.</p>
     </details>
 
     <h2 id="updates">Updates</h2>
