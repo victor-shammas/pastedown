@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pastedown Support</title>
+<meta name="description" content="Help with Pastedown: copying Markdown as rich text, loading the clipboard, display options and updates.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="30" height="30">Pastedown</a>
+    <nav class="nav" aria-label="Main">
+      <a href="./" class="hide-sm">Home</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap narrow">
+    <h1>Support</h1>
+    <p>Something that pastes badly, or a question the answers below don’t cover? Email <a href="mailto:contact+pastedown@victorshammas.com?subject=Pastedown%20support">contact+pastedown@victorshammas.com</a>. I read every message.</p>
+    <ul class="toc">
+      <li><a href="#start">Getting started</a></li>
+      <li><a href="#clipboard">The clipboard</a></li>
+      <li><a href="#pasting">Pasting</a></li>
+      <li><a href="#display">Display</a></li>
+      <li><a href="#updates">Updates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <h2 id="start">Getting started</h2>
+    <details open>
+      <summary>How do I turn Markdown into rich text?</summary>
+      <p>Copy the Markdown, then open Pastedown: it loads what you copied and shows the result. Choose <em>Edit › Copy as Rich Text</em> (<kbd>⇧⌘C</kbd>), or click the button in the toolbar, and paste into Notes, Mail, Pages, Word or Google Docs.</p>
+    </details>
+    <details>
+      <summary>Can I edit the text first?</summary>
+      <p>Yes. The left pane holds the Markdown source; the preview on the right follows as you type. <kbd>⌘F</kbd> finds text in the source. To hide the source and see only the result, choose <em>View › Show Markdown Source</em> (<kbd>⌘\</kbd>).</p>
+    </details>
+    <details>
+      <summary>Can I convert without opening the window?</summary>
+      <p>With Pastedown in front, <em>Edit › Convert Clipboard to Rich Text</em> (<kbd>⌥⌘C</kbd>) converts the Markdown on the clipboard in place, without loading it into the window.</p>
+    </details>
+    <details>
+      <summary>Which Markdown does it understand?</summary>
+      <p>GitHub-flavoured Markdown: headings, bold, italic and strikethrough, links, bulleted and numbered lists, task lists, tables, block quotations, code and code blocks, and horizontal rules. HTML inside the Markdown is kept where it is safe; scripts, styles and forms are removed.</p>
+    </details>
+
+    <h2 id="clipboard">The clipboard</h2>
+    <details open>
+      <summary>When does Pastedown load the clipboard?</summary>
+      <p>Once, when it opens. After that your text stays as it is. To load the clipboard again, choose <em>Edit › Load Clipboard</em> (<kbd>⇧⌘V</kbd>), which replaces the text in the window.</p>
+    </details>
+    <details>
+      <summary>Can it follow the clipboard as I copy new things?</summary>
+      <p>Yes: turn on <em>Edit › Continuously Auto-Load Clipboard</em>. Each time Pastedown comes to the front, it loads what you copied in the meantime. It never replaces text you have edited.</p>
+    </details>
+    <details>
+      <summary>Can I stop it loading the clipboard when it opens?</summary>
+      <p>Turn off <em>Edit › On Launch, Auto-Load Clipboard</em>. Both options are also in <em>Pastedown › Settings</em>.</p>
+    </details>
+    <details>
+      <summary>It says the clipboard is large.</summary>
+      <p>Pastedown doesn’t load more than about a megabyte of text by itself. <em>Edit › Load Clipboard</em> (<kbd>⇧⌘V</kbd>) loads it anyway.</p>
+    </details>
+
+    <h2 id="pasting">Pasting</h2>
+    <details open>
+      <summary>Why does the pasted text look different from the preview?</summary>
+      <p>The preview is for reading. What goes on the clipboard is plainly styled, so that it takes on the fonts of the document you paste into. Headings, emphasis, lists, tables and links are kept.</p>
+    </details>
+    <details>
+      <summary>What happens to task lists?</summary>
+      <p>Checkboxes become the characters ☐ and ☑, which every app can show.</p>
+    </details>
+    <details>
+      <summary>What happens to images?</summary>
+      <p>Pastedown doesn’t fetch images from the web, so they aren’t shown in the preview. The image link is kept in what you copy, and the app you paste into may load it.</p>
+    </details>
+    <details>
+      <summary>The formatting didn’t arrive in one app.</summary>
+      <p>Some apps and text fields take only plain text. If an app that normally takes formatting gets it wrong, email me the Markdown and the name of the app.</p>
+    </details>
+
+    <h2 id="display">Display</h2>
+    <details open>
+      <summary>How do I change the font, the size or the colours?</summary>
+      <p>In the <em>View</em> menu or in <em>Pastedown › Settings</em>: <em>Zoom In</em> and <em>Zoom Out</em> (<kbd>⌘+</kbd>, <kbd>⌘−</kbd>; <kbd>⌘0</kbd> for the actual size), <em>Wider</em> and <em>Narrower</em> (<kbd>⌘]</kbd>, <kbd>⌘[</kbd>), five typefaces, <em>Justify Text</em> (<kbd>⌘J</kbd>) and <em>Dark Mode</em> (<kbd>⌘D</kbd>). Without Dark Mode, Pastedown follows your Mac’s appearance. These change the preview only, not what you copy.</p>
+    </details>
+
+    <h2 id="updates">Updates</h2>
+    <details>
+      <summary>How do I update Pastedown?</summary>
+      <p>Choose <em>Help › Check for Updates…</em>: it opens the download page, where the version number of the latest release is shown. Download it and drag it into Applications, replacing the old copy. Pastedown doesn’t check for updates by itself, because it never connects to the internet.</p>
+    </details>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email <a href="mailto:contact+pastedown@victorshammas.com?subject=Pastedown%20support">contact+pastedown@victorshammas.com</a>. If something pasted badly, it helps to include the Markdown and to say which app you pasted into.</p>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="https://github.com/victor-shammas/pastedown/releases">Releases</a><a href="mailto:contact+pastedown@victorshammas.com">Contact</a><a href="https://buymeacoffee.com/victorshammas">Buy me a coffee</a></nav>
+    <p>Pastedown is an independent app. Mac, Apple Notes, Mail and Pages are trademarks of Apple Inc. Microsoft Word is a trademark of Microsoft Corporation. Google Docs is a trademark of Google LLC. None of them is affiliated with or endorses Pastedown.</p>
+    <p>© 2026 Victor Shammas</p>
+  </div>
+</footer>
+</body>
+</html>
