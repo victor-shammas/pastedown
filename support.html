@@ -42,7 +42,7 @@
     </details>
     <details>
       <summary>Can I edit the text first?</summary>
-      <p>Yes. The left pane holds the Markdown source; the preview on the right follows as you type, and scrolls with the source as you scroll. <kbd>⌘F</kbd> finds text in the source. To hide the source and see only the result, choose <em>View › Show Markdown Source</em> (<kbd>⌘\</kbd>).</p>
+      <p>Yes. The left pane holds the Markdown source; the preview on the right follows as you type, and the two panes scroll together: scroll either one and the other follows. <kbd>⌘F</kbd> finds text in the source. To hide the source and see only the result, choose <em>View › Show Markdown Source</em> (<kbd>⌘\</kbd>).</p>
     </details>
     <details>
       <summary>Can I convert the clipboard without loading it?</summary>
@@ -70,6 +70,14 @@
       <summary>It says the clipboard is large.</summary>
       <p>Pastedown doesn’t load more than about 200 KB of text by itself. <em>Edit › Load Clipboard</em> (<kbd>⇧⌘V</kbd>) loads it anyway.</p>
     </details>
+    <details>
+      <summary>I copied a reply from Claude Code in the terminal. What happens to its line breaks?</summary>
+      <p>Text copied from a terminal arrives with its lines broken at the window’s width, padded with spaces, indented and marked with ⏺. Pastedown recognizes such a copy as it is loaded or pasted and repairs it: the lines of a paragraph are rejoined, the padding, indentation and markers go, a table drawn with box characters becomes a Markdown table, and commands are set as code. Markdown that didn’t come from a terminal is left as it is. To turn this off, choose <em>Edit › Fix Line Breaks in Terminal Copies</em>.</p>
+    </details>
+    <details>
+      <summary>Can it fix the line breaks in other text, such as a column copied from a PDF?</summary>
+      <p>Choose <em>Edit › Fix Line Breaks</em> (<kbd>⇧⌘L</kbd>): it rejoins the lines of each paragraph in the source pane and keeps the breaks between paragraphs. <kbd>⌘Z</kbd> undoes it. It is meant for plain text; in Markdown that was written by hand it can also join lines you meant to keep apart.</p>
+    </details>
 
     <h2 id="pasting">Pasting</h2>
     <details open>
@@ -92,7 +100,7 @@
     <h2 id="display">Display</h2>
     <details open>
       <summary>How do I change the font, the size or the colours?</summary>
-      <p>In the <em>View</em> menu or in <em>Pastedown › Settings</em>: <em>Zoom In</em> and <em>Zoom Out</em> (<kbd>⌘+</kbd>, <kbd>⌘−</kbd>; <kbd>⌘0</kbd> for the actual size), <em>Wider</em> and <em>Narrower</em> (<kbd>⌘]</kbd>, <kbd>⌘[</kbd>), five typefaces, <em>Justify Text</em> (<kbd>⌘J</kbd>) and <em>Dark Mode</em> (<kbd>⌘D</kbd>). With Dark Mode off, Pastedown follows your Mac’s appearance, unless you have chosen Light in Settings. Zoom also enlarges the source. None of this changes what you copy.</p>
+      <p>In the <em>View</em> menu or in <em>Pastedown › Settings</em>: <em>Zoom In</em> and <em>Zoom Out</em> (<kbd>⌘+</kbd>, <kbd>⌘−</kbd>; <kbd>⌘0</kbd> for the actual size), <em>Wider</em> and <em>Narrower</em> (<kbd>⌘]</kbd>, <kbd>⌘[</kbd>) or <em>Fit to Window</em>, which lets the text fill the preview, five typefaces, <em>Justify Text</em> (<kbd>⌘J</kbd>) and <em>Dark Mode</em> (<kbd>⌘D</kbd>). With Dark Mode off, Pastedown follows your Mac’s appearance, unless you have chosen Light in Settings. Zoom also enlarges the source. None of this changes what you copy.</p>
     </details>
 
     <h2 id="updates">Updates</h2>
